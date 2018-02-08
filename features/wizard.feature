@@ -39,7 +39,7 @@ Feature: Initial execution
     When I tap Next until the fourth wizard screen
     Then I see to fourth wizard screen
 
-  @nightly @wizard @homepage @todo
+  @nightly @wizard @homepage
   Scenario: Go to homepage with speed change feature notification
     Given I am on the first wizard screen
     When I advance to homepage
