@@ -1,4 +1,4 @@
-Feature: Initial execution
+Feature: Wizard
   As a user I want execute Globosat Play app for the first time.
   I should be able to navigate through
   wizard screens with gestures or by tap a 'next' button.

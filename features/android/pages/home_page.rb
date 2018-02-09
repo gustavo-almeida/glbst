@@ -55,11 +55,26 @@ def search_button
 	"* id:'toolbar_right_imageview'"
 end
 
+def tap_sandwich_menu
+	touch(sandwich_menu)
+end
+
 def assert_header_present
     ids = [logo, sandwich_menu, search_button]
     ids.each do |txt|
       check_element_exists txt
     end
 end
+
+############ Menu Sandwich #############
+def profile_image_option
+	"* id:'menu_header_image'"
+end
+
+def tap_profile_image_option
+	touch(profile_image_option)
+end
+
+#########################################
 
 end
