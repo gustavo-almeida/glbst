@@ -31,3 +31,25 @@ Then(/^I am redirect to profile page$/) do
 	@current_page = page(ProfilePage).await(timeout: 30)
 	@current_page.assert_profile_page
 end
+
+When(/^I go to profile page$/) do
+	step "I access app main menu"
+	step "access profile option"
+end
+
+Then(/^I should be logged out$/) do
+	@current_page = page(HomePage).await(timeout: 30)
+	step "I access app main menu"
+	@current_page.assert_user_logged_out
+end
+
+When(/^I perform Login with user "([^\"]*)"$/) do |user|
+	step "I am on the login webpage"
+	step "I proceed with Login steps with \"#{user}\""
+end
+
+Then(/^I should be logged in$/) do
+	@current_page = page(HomePage).await(timeout: 30)
+	step "I access app main menu"
+	@current_page.assert_user_logged_in
+end

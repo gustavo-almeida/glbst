@@ -1,7 +1,7 @@
 CREDENTIALS = {
     valid_user: {
-        username: 'calabash',
-        password: 'password'
+        username: 'automacaovod1',
+        password: 'cTF3MmUz\n' #encrypted
     },
     invalid_user: {
         username: 'calabash',

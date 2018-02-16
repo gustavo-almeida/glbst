@@ -71,10 +71,26 @@ def profile_image_option
 	"* id:'menu_header_image'"
 end
 
+def logged_out_label
+    "android.widget.TextView marked:'ENTRAR'"
+end
+
+def logged_in_label
+	"* id:'menu_header_description'"
+end
+
 def tap_profile_image_option
+	sleep(1)
 	touch(profile_image_option)
 end
 
+def assert_user_logged_out
+	element_exists(logged_out_label)
+end
+
+def assert_user_logged_in
+	element_exists(logged_in_label)
+end
 #########################################
 
 end
