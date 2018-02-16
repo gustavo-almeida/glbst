@@ -45,7 +45,7 @@ def avatar_selector_title
 end
 
 def avatar_user_selector(name)
-	"webView xpath:'//*[text()=\"#{name}\"]'"
+	"webView xpath:'//*[text()=\"#{name.capitalize}\"]'"
 end
 
 def select_user_avatar(name)

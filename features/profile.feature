@@ -6,23 +6,23 @@ Background:
 	Given I am on the first wizard screen
 	When I advance to homepage
 
-@nightly @profile
+@nightly @profile @reinstall
 Scenario: Validate profile page
 	Given I am on the clean homepage
 	When I access app main menu
 	And access profile option
 	Then I am redirect to profile page
 
-@nightly @smoke-test @profile @reinstall @todo
+@nightly @smoke-test @profile @reinstall
 Scenario: Logout from app
 	Given I am on the clean homepage
 	When I go to profile page
 	And I perform Logout
 	Then I should be logged out
 
-@nightly @smoke-test @profile @reinstall @todo
+@nightly @smoke-test @profile @reinstall
 Scenario: Login from app
 	Given I am on the clean homepage
 	When I go to profile page
-	And I perform Login with user "Automacao"
+	And I perform Login with user "automacao"
 	Then I should be logged in
