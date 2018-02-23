@@ -6,12 +6,31 @@ def trait
 	"* id:'toolbarLogo'"
 end
 
+def no_internet_image_icon
+	"* id:'image'"
+end
+
+def no_internet_text_info
+	"* id:'text'"
+end
+
+def no_internet_try_again_button
+	"* id:'button'"
+end
+
 def navigation_bar
 	"* id:'navigation'"
 end
 
 def assert_home
 	ids = [trait, navigation_bar]
+    ids.each do |txt|
+      check_element_exists txt
+    end
+end
+
+def assert_no_internet_alert
+	ids = [no_internet_image_icon, no_internet_text_info, no_internet_try_again_button]
     ids.each do |txt|
       check_element_exists txt
     end

@@ -23,16 +23,16 @@ Before do |scenario|
   if scenario_tags.include?('@reinstall')
     @calabash_launcher.reset_app_jail
   end
-  unless @calabash_launcher.calabash_no_launch?
+#  unless @calabash_launcher.calabash_no_launch?
     @calabash_launcher.relaunch()
     @calabash_launcher.calabash_notify(self)
-  end
+#  end
 end
 
 After do |scenario|
   unless @calabash_launcher.calabash_no_stop?
     calabash_exit
-    if @calabash_launcher.active?
+    if @calabash_launcher.attached_to_automator?
       @calabash_launcher.stop
     end
   end
