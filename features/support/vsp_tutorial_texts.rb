@@ -1,4 +1,4 @@
-TUTORIAL_TEXTS = {
+VSP_TUTORIAL_TEXTS = {
     first_page: {
         title: 'Não perca nada!',
         text: 'Para não perder seus programas favoritos, precisamos da sua permissão para enviar notificações.'

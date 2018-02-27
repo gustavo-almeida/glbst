@@ -38,7 +38,7 @@ class VspTutorialPage < Calabash::ABase
 
   def assert_tutorial_first_page_content
     sleep(1)
-    first = TUTORIAL_TEXTS[:first_page]
+    first = VSP_TUTORIAL_TEXTS[:first_page]
     assert_page_text(first[:title], title)
     assert_page_text(first[:text], text)
     element_exists(ok_button)
@@ -47,7 +47,7 @@ class VspTutorialPage < Calabash::ABase
 
   def assert_tutorial_second_page_content
     sleep(1)
-    second = TUTORIAL_TEXTS[:second_page]
+    second = VSP_TUTORIAL_TEXTS[:second_page]
     assert_page_text(second[:title], title)
     assert_page_text(second[:text], text)
     element_exists(ok_button)
