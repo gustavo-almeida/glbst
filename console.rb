@@ -13,10 +13,14 @@ EOF
   exit(false)
 end
 
-if target == 'android'
-  exec("bundle exec calabash-android console prebuilt/Android-debug.apk")
-elsif target == 'ios'
-  exec("APP_BUNDLE_PATH=prebuilt/WordPress-cal.app bundle exec calabash-ios console")
+if target == 'android-vsp'
+  exec("export APP=prebuilt/vsp/presentation-debug.apk && bundle exec calabash-android run $APP -p android #{ARGV.join(' ')}")
+elsif target == 'ios-vsp'
+  exec("export APP=prebuilt/vsp/GlobosatPlay.app && export APP_BUNDLE_PATH=$APP && bundle exec cucumber -p ios #{ARGV.join(' ')}")
+elsif target == 'android-gsatplay'
+  exec("export APP=prebuilt/gsatplay/app-globosat-debug.apk && bundle exec calabash-android run $APP -p android #{ARGV.join(' ')}")
+elsif target == 'ios-gsatplay'
+  exec("export APP=prebuilt/TODO.app && export APP_BUNDLE_PATH=$APP && bundle exec cucumber -p ios #{ARGV.join(' ')}")
 else
-    puts "Invalid target #{target}"
+  puts "Invalid target #{target}"
 end
