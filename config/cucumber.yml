@@ -2,6 +2,6 @@
 ##YAML Template
 ---
 android-vsp: PLATFORM=android -r features/support -r features/android -r features/step_definitions -r features/android/pages
-
-
-ios-vsp: PLATFORM=ios APP_BUNDLE_PATH=prebuilt/GlobosatPlay.app  -r features/support -r features/ios/support -r features/ios/helpers -r features/step_definitions -r features/ios/pages
+ios-vsp: PLATFORM=ios APP_BUNDLE_PATH=prebuilt/vsp/GlobosatPlay.app  -r features/support -r features/ios/support -r features/ios/helpers -r features/step_definitions -r features/ios/pages
+android-gsatplay: PLATFORM=android -r features/support -r features/android -r features/step_definitions -r features/android/pages
+ios-gsatplay: PLATFORM=ios APP_BUNDLE_PATH=prebuilt/gsatplay/GlobosatPlay.app  -r features/support -r features/ios/support -r features/ios/helpers -r features/step_definitions -r features/ios/pages

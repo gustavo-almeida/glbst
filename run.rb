@@ -14,9 +14,13 @@ EOF
 end
 
 if target == 'android-vsp'
-  exec("export APP=prebuilt/presentation-debug.apk && bundle exec calabash-android run $APP -p android #{ARGV.join(' ')}")
+  exec("export APP=prebuilt/vsp/presentation-debug.apk && bundle exec calabash-android run $APP -p android #{ARGV.join(' ')}")
 elsif target == 'ios-vsp'
-  exec("export APP=prebuilt/GlobosatPlay.app && export APP_BUNDLE_PATH=$APP && bundle exec cucumber -p ios #{ARGV.join(' ')}")
+  exec("export APP=prebuilt/vsp/GlobosatPlay.app && export APP_BUNDLE_PATH=$APP && bundle exec cucumber -p ios #{ARGV.join(' ')}")
+elsif target == 'android-gsatplay'
+  exec("export APP=prebuilt/gsatplay/app-globosat-debug.apk && bundle exec calabash-android run $APP -p android #{ARGV.join(' ')}")
+elsif target == 'ios-gsatplay'
+  exec("export APP=prebuilt/TODO.app && export APP_BUNDLE_PATH=$APP && bundle exec cucumber -p ios #{ARGV.join(' ')}")
 else
   puts "Invalid target #{target}"
 end
