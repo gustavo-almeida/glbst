@@ -171,7 +171,8 @@ screenshot*.png
 test-servers/
 
 #added for this project
-prebuilt/
+prebuilt/gsatplay/*
+prebuilt/vsp/*
 
 # bundler
 .bundle
