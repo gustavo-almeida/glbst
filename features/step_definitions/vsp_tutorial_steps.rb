@@ -70,3 +70,9 @@ end
 Then(/^with both options disabled$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+When(/^I advance to vsp homepage$/) do
+	@current_page.tap_not_now_button
+	@current_page.assert_tutorial_second_page_content
+	@current_page.tap_not_now_button
+end

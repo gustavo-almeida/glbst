@@ -2,6 +2,10 @@ Feature: Home
   As a user I want open the app on homepage
   I should be able to navigate through features and channels
 
+Background:
+  	Given I am on the first tutorial vsp screen
+	When I advance to vsp homepage
+
 @nightly @smoke-test @vsp
 Scenario: Validate vsp homepage
 	Given I am on the vsp homepage
@@ -14,9 +18,9 @@ Scenario: Go to Explore Page
 	Then I be redirect to vsp explore page
 
 @nightly @vsp
-Scenario: Go to Profile Page
+Scenario: Go to Account Page
 	Given I am on the vsp homepage
-	When I access vsp Profile option
+	When I access vsp Account option
 	Then I be redirect to vsp profile page
 
 @nightly @vsp @todo

@@ -216,6 +216,7 @@ Temporary Items
 /test/tmp/
 /test/version_tmp/
 /tmp/
+*.irb-history
 
 # Used by dotenv library to load environment variables.
 # .env

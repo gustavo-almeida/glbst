@@ -36,20 +36,28 @@ def assert_no_internet_alert
     end
 end
 
-def nb_profile_option
-	"* id:'profile'"
+def now_menu_option
+	"* id:'menu_now'"
 end
 
-def nb_explore_option
-	"* id:'explore'"
+def explore_menu_option
+	"* id:'menu_explore'"
 end
 
-def tap_nb_explore_option
-	touch(nb_explore_option)
+def account_menu_option
+	"* id:'menu_account'"
 end
 
-def tap_nb_profile_option
-	touch(nb_profile_option)
+def tap_menu_now_option
+	touch(now_menu_option)
+end
+
+def tap_menu_explore_option
+	touch(explore_menu_option)
+end
+
+def tap_menu_account_option
+	touch(account_menu_option)
 end
 
 end

@@ -7,12 +7,12 @@ Then(/^I should see vsp home features$/) do
 	@current_page.assert_home
 end
 
-When(/^I access vsp Profile option$/) do
-	@current_page.tap_nb_profile_option
+When(/^I access vsp Account option$/) do
+	@current_page.tap_menu_account_option
 end
 
 When(/^I access vsp Explore option$/) do
-	@current_page.tap_nb_explore_option
+	@current_page.tap_menu_explore_option
 end
 
 Then(/^a message should be displayed$/) do

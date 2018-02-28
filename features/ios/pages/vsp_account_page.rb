@@ -1,6 +1,6 @@
 require 'calabash-cucumber/ibase'
 
-class VspProfilePage < Calabash::IBase
+class VspAccountPage < Calabash::IBase
 
 def trait
 	"* id:'Conta'"
