@@ -13,10 +13,12 @@ After clone this project, generate (build) and copy .APK and .APP/.IPA files ins
 Then, just run the tests on the preferred platform filtering tests with tags or features. Ex.:
 
 Running all Android tests from VSP:
-bundle exec calabash-android run prebuilt/vsp/presentation-debug.apk -p android-vsp --tags @vsp
+
+    bundle exec calabash-android run prebuilt/vsp/presentation-debug.apk -p android-vsp --tags @vsp
 
 Running all iOS tests from GsatPlay:
-bundle exec cucumber -p ios-gsatplay --tags @gsatplay
+
+    bundle exec cucumber -p ios-gsatplay --tags @gsatplay
 
 
 If more projects are included, like Gloob, remember to add cucumber configuration and use tags on scenarios. 
