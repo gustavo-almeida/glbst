@@ -14,3 +14,7 @@ end
 When(/^I access vsp Explore option$/) do
 	@current_page.tap_nb_explore_option
 end
+
+Then(/^a message should be displayed$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
