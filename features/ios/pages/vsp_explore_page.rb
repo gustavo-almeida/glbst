@@ -3,11 +3,11 @@ require 'calabash-cucumber/ibase'
 class VspExplorePage < Calabash::IBase
 
 def trait
-	"* id:'Explore'"
+	"UILabel marked:'Explore' index:0"
 end
 
 def search_option
-	"* id:'search'" #####TODO
+	"* marked:'action_search'"
 end
 
 def assert_vsp_explore_page
