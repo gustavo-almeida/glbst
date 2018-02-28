@@ -173,6 +173,8 @@ test-servers/
 #added for this project
 prebuilt/gsatplay/*
 prebuilt/vsp/*
+!prebuilt/gsatplay/.gitkeep 
+!prebuilt/vsp/.gitkeep
 
 # bundler
 .bundle
