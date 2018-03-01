@@ -37,15 +37,15 @@ def assert_no_internet_alert
 end
 
 def now_menu_option
-	"* id:'menu_now'"
+	"* contentDescription:'menu_now'"
 end
 
 def explore_menu_option
-	"* id:'menu_explore'"
+	"* contentDescription:'menu_explore'"
 end
 
 def account_menu_option
-	"* id:'menu_account'"
+	"* contentDescription:'menu_account'"
 end
 
 def tap_menu_now_option

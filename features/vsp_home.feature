@@ -29,24 +29,48 @@ Scenario: Execute app without internet
  	And without internet access
  	Then a message should be displayed
 
-@nightly @vsp @todo
+@nightly @vsp
 Scenario Outline: Select channel
  	Given I am on the vsp homepage
  	When I roll to <channel> on channel selector
- 		|channel|
- 		|sportv|
- 		|globonews|
- 		|gnt|
- 		|multishow|
- 		|viva|
- 		|mais|
- 		|gloob|
- 		|gloobinho|
- 		|off|
- 		|bis|
- 		|megapix|
- 		|brasil|
- 		|universal|
- 		|syfy|
- 		|studio|
- 	Then I should see the homepage changes for this channel
+ 	Then I should see the homepage changes for <channel>
+    Examples:
+      | channel   |
+      | sportv    |
+      | globonews |
+      | gnt       |
+      | multishow |
+      | viva      |
+      | mais      |
+      | gloob     |
+      | gloobinho |
+      | off       |
+      | bis       |
+      | megapix   |
+      | brasil    |
+      | universal |
+      | syfy      |
+      | studio    |
+
+@nightly @vsp
+Scenario Outline: Validate channel content
+ 	Given I am on the vsp homepage
+ 	When I play <channel> on channel selector
+ 	Then I should be redirect for <channel> content
+    Examples:
+      | channel   |
+      | sportv    |
+      | globonews |
+      | gnt       |
+      | multishow |
+      | viva      |
+      | mais      |
+      | gloob     |
+      | gloobinho |
+      | off       |
+      | bis       |
+      | megapix   |
+      | brasil    |
+      | universal |
+      | syfy      |
+      | studio    |

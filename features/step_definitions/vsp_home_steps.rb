@@ -18,3 +18,19 @@ end
 Then(/^a message should be displayed$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+When(/^I roll to (.*) on channel selector$/) do |channel|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should see the homepage changes for (.*)$/) do |channel|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I play (.*) on channel selector$/) do |channel|
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Then(/^I should be redirect for (.*) content$/) do |channel|
+  pending # Write code here that turns the phrase above into concrete actions
+end
