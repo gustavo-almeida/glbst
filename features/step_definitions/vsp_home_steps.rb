@@ -20,7 +20,7 @@ Then(/^a message should be displayed$/) do
 end
 
 When(/^I roll to (.*) on channel selector$/) do |channel|
-  pending # Write code here that turns the phrase above into concrete actions
+	@current_page.roll_to_channel(channel)
 end
 
 Then(/^I should see the homepage changes for (.*)$/) do |channel|

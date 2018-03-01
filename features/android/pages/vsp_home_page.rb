@@ -60,4 +60,18 @@ def tap_menu_account_option
 	touch(account_menu_option)
 end
 
+def current_channel
+	return ######### TODO
+end
+
+def roll_to_channel(name)
+	direction = [:up, :down].sample
+	loop do
+	    break if current_channel == name || counter == 20
+		pan("* marked:'logo' index:1", direction)
+		sleep(1)
+	end
+	assert_equal(name, current_channel, "Channel not found. Scrolled to ${direction}")
+end
+
 end
