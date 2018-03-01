@@ -28,7 +28,7 @@ When(/^access profile option$/) do
 end
 
 Then(/^I am redirect to profile page$/) do
-	@current_page = page(ProfilePage).await(timeout: 30)
+	@current_page = page(GsatPlayProfilePage).await(timeout: 30)
 	@current_page.assert_profile_page
 end
 

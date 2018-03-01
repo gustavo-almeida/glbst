@@ -3,7 +3,7 @@ Feature: Profile
   I should be able Login/Logout, change and edit my profile
 
 Background:
-	Given I am on the first wizard screen
+	Given I am on the first tutorial screen
 	When I advance to homepage
 
 @nightly @profile @reinstall @gsatplay
