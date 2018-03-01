@@ -8,9 +8,9 @@ After reading file above and configure calabash for both OS, check it out .pdf f
 
 Now you are read to start. 
 
-After clone this project, generate (build) .APK and .APP/.IPA files and copy inside correct product tested folders. They are /prebuilt/vsp and /prebuilt/gsatplay.
+Clone this project, generate (build) .APK and .APP/.IPA files and copy inside correct product folders. They are /prebuilt/vsp and /prebuilt/gsatplay.
 
-Then, just run the tests on the preferred platform filtering tests with tags or features. Ex.:
+Then, just run the tests on the preferred platform filtering by tags or features. Ex.:
 
 Running all Android tests from VSP:
 

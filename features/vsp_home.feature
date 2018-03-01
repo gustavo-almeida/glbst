@@ -21,9 +21,9 @@ Scenario: Go to Explore Page
 Scenario: Go to Account Page
 	Given I am on the vsp homepage
 	When I access vsp Account option
-	Then I be redirect to vsp profile page
+	Then I be redirect to vsp account page
 
-@nightly @vsp @todo
+@nightly @vsp
 Scenario: Execute app without internet
  	Given I am on the vsp homepage
  	And without internet access
